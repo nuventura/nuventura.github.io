@@ -1,12 +1,12 @@
 body {
     font-family: Georgia;
-    background-image: url("https://pbs.twimg.com/media/DPUFqCmW4AAPrgG.jpg");
-    background-size: auto 100vh;
+    background-image: url("https://images-platform.99static.com/yAF4C4IoJyD0RHedR9TuCWPhjoA=/0x0:1543x1543/500x500/top/smart/99designs-contests-attachments/86/86728/attachment_86728889");
+    background-size: none;
     height:100vh;
   }
   a {
     text-decoration: none;
-    color: rgb(10, 39, 10);
+    color: #044b04;
   }
   a:hover {
     text-decoration: underline;
@@ -25,7 +25,7 @@ body {
   .site-subtitle,
   .site-title {
     text-align: center;
-    color:black;
+    color:#044b04;
   }
   .site-subtitle {
     font-style: italic;

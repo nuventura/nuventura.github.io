@@ -1,35 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: Georgia;
-    background-image: url("https://images-platform.99static.com/yAF4C4IoJyD0RHedR9TuCWPhjoA=/0x0:1543x1543/500x500/top/smart/99designs-contests-attachments/86/86728/attachment_86728889");
-    background-size: none;
-    height:100vh;
+  font-family: Georgia;
+  background-image: url("https://static.wixstatic.com/media/304fdc_febcb2d3fc7f40cf9f0bfe15b15b6c00~mv2.png/v1/fill/w_640,h_640,al_c,q_90,usm_0.66_1.00_0.01/304fdc_febcb2d3fc7f40cf9f0bfe15b15b6c00~mv2.webp");
+  background-size: auto 100vh ;
+  height:100vh;
+}
+header {
+  height:100vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+}
+.menu {
+  background-size: auto;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  background-color: black;
+}
+.menu li {
+  list-style: none;
+}
+.menu ul {
+  display: flex;
+  justify-content:space-around;
+}
+.site-subtitle,
+.site-title {
+  text-align: center;
+  color:green;
+}
+.site-subtitle {
+  font-style: italic;
   }
-  a {
-    text-decoration: none;
-    color: #044b04;
+.img-portfolio {
+  height:30vh;
+  width:30vh;
   }
-  a:hover {
-    text-decoration: underline;
-  }
-  .menu {
-    background-size: auto;
-    height:30vh;
-  }
-  .menu li {
-    list-style: none;
-  }
-  .menu ul {
-    display: flex;
-    justify-content:space-around;
-  }
-  .site-subtitle,
-  .site-title {
-    text-align: center;
-    color:#044b04;
-  }
-  .site-subtitle {
-    font-style: italic;
-    }
-  
-  
-  
+
+

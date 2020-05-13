@@ -9,6 +9,20 @@ body {
   background-size: auto 100vh ;
   height:100vh;
 }
+
+/*media is used to do responsive site for mobile sites (breakpoints)*/
+@media( min-width: 400px){
+  body {
+    font-size: 12px;
+  }
+}
+@media( min-width: 600px){
+  body {
+    font-size: 18px;
+  }
+}
+
+
 header {
   height:100vh;
   display: flex;
@@ -43,6 +57,7 @@ a:hover {
 .site-subtitle,
 .site-title {
   text-align: center;
+  font-size: 4em ;
   color:green;
 }
 .site-subtitle {

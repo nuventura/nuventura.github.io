@@ -4,25 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Georgia;
-  background-image: url("https://static.wixstatic.com/media/304fdc_febcb2d3fc7f40cf9f0bfe15b15b6c00~mv2.png/v1/fill/w_640,h_640,al_c,q_90,usm_0.66_1.00_0.01/304fdc_febcb2d3fc7f40cf9f0bfe15b15b6c00~mv2.webp");
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4D1BAQFjpySdQRyKZQ/company-background_10000/0?e=2159024400&v=beta&t=wPY1UIts3zcu5DR6I5tMTa89bQTt1VQQwUQvU9ikRiQ");
   background-size: auto 100vh ;
+  font-family: 'Codystar', cursive;
   height:100vh;
 }
-
-/*media is used to do responsive site for mobile sites (breakpoints)*/
-@media( min-width: 400px){
-  body {
-    font-size: 12px;
-  }
-}
-@media( min-width: 600px){
-  body {
-    font-size: 18px;
-  }
-}
-
-
 header {
   height:100vh;
   display: flex;
@@ -33,12 +19,17 @@ header {
   display: block;
   padding: 10px 20px;
 }
+.menu a:hover {
+      color: rgb(128, 197, 128) ;
+      transition: text-shadow 2s;
+      }
+
 a {
   text-decoration: none;
   color: white;
 }
 a:hover {
-  text-decoration: underline;
+  text-shadow: rgb(2, 26, 2);
 }
 .menu {
   background-size: auto;
@@ -46,6 +37,7 @@ a:hover {
   top: 0px;
   width: 100vw;
   background-color: black;
+  z-index: 1;  
 }
 .menu li {
   list-style: none;
@@ -54,18 +46,86 @@ a:hover {
   display: flex;
   justify-content:space-around;
 }
+.title {
+ transform: scale(0.2) translateY(50vh) ;
+ opacity: 0;
+ animation: ease-in 2s animationTitle forwards;
+
+}
+@keyframes animationTitle{
+ 0%{
+ /*estado inicial*/
+ 
+}
+100%{
+ /*estado final*/
+ transform: scale(1) translateY(0);
+ opacity: 1;
+ 
+}
+ 
+ }
+
 .site-subtitle,
 .site-title {
   text-align: center;
-  font-size: 4em ;
-  color:green;
+  color:whitesmoke;
 }
+.site-title 
+{
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  }
 .site-subtitle {
-  font-style: italic;
+  font-family: 'Codystar', cursive;
   }
+  .contato,
+  .portifolio {
+    padding:2em;
+    background-color:rgb(24, 22, 22);
+    min-height: 50vh;
+    }
+    .contato h2,
+.portifolio h2{
+  color:white;
+  text-align: center;
+  margin-bottom: 3em;
+  }
+  .portifolio .grid{
+    display: grid;
+    gap: 1em;
+  grid-template-columns: 400px 400px 400px;
+    
+    }
+  .portifolio figure{
+    text-align: center;
+    
+    }
+    .portifolio figcaption{
+      color: whitesmoke;
+      margin-top: 2em;
+      }
 .img-portfolio {
-  height:30vh;
-  width:30vh;
+  height:15vh;
+  width:15vh;
+  object-fit: cover; /*colocar a imagem sem deformar*/
+  border-radius: 60%; /*colocar a imagem redonda*/
+  transition: transform 500ms; /*sempre utilizar com funcoes como rotate transform and etc..*/
   }
+  .img-portfolio:hover {
+    transform: scale(1.2);
+    }
+  .contato .icons {
+    text-align: center;
+    }
+  .contato a {
+    color: whitesmoke;
+    font-size: 3em;
+    transition: text-shadow 2s;
+    }
+    .contato a:active /*click moment - for mobile users*/
+    .contato a:hover {
+      text-shadow: 1px 1px 10px wheat;
+      }
 
 

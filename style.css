@@ -79,13 +79,53 @@ a:hover {
 .site-subtitle {
   font-family: 'Codystar', cursive;
   }
-  .contato,
+
+  .about p{
+    color: whitesmoke;
+    text-indent: 2em;
+    margin-bottom: 1.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    }
+     .about a{
+      text-decoration: underline;
+      }
+.about a:hover{
+  color: rgb(33, 82, 33) ;
+  }
+  
+
+  .about .gis img{
+    margin-left: 2em;
+    float: right;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    }
+
+
+  .about,
+  .contact,
   .portifolio {
     padding:2em;
     background-color:rgb(24, 22, 22);
-    min-height: 50vh;
+    min-height: 100vh;
     }
-    .contato h2,
+
+    @media (min-width:1400px)
+    {
+  .container
+  {
+   max-width: 1400px;
+   margin-left: auto;
+   margin-right: auto;
+
+    }
+      }
+
+    .about h2,
+    .contact h2,
 .portifolio h2{
   color:white;
   text-align: center;
@@ -106,19 +146,45 @@ a:hover {
       margin-top: 2em;
       }
 .img-portfolio {
-  height:15vh;
-  width:15vh;
+  height:50vh;
+  width:50vh;
   object-fit: cover; /*colocar a imagem sem deformar*/
-  border-radius: 60%; /*colocar a imagem redonda*/
   transition: transform 500ms; /*sempre utilizar com funcoes como rotate transform and etc..*/
   }
-  .img-portfolio:hover {
-    transform: scale(1.2);
+
+  .card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
     }
-  .contato .icons {
+    .flip-card:hover .card{
+      transform: rotateY(180deg);
+      }
+      .flip-card{
+        perspective: 700px;
+        }
+  .card-front, .card-back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+    .card-back{
+      height: 50vh ;
+      width: 50vh;
+      transform: rotateY(180deg);
+      background-color: black;
+      }
+
+  /*.img-portfolio:hover {
+    transform: scale(1.2);
+    }*/
+
+  .contact .icons {
     text-align: center;
     }
-  .contato a {
+  .contact a {
     color: whitesmoke;
     font-size: 3em;
     transition: text-shadow 2s;
